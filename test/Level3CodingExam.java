@@ -10,7 +10,7 @@ public class Level3CodingExam {
 	/**
 	 * PART A
 	 * 
-	 * There are 2 candidates for "Person of the Year 2014". The votes are contained in an ArrayList. Not every voter has capitalized the name of
+	 * There are 2 candidates for "Person of the Year 2019". The votes are contained in an ArrayList. Not every voter has capitalized the name of
 	 * their choice in the same way. This question is part of Stanford University's CS106 mid-term exam.
 	 * **/
 	@Test
@@ -28,8 +28,11 @@ public class Level3CodingExam {
 		votes.add("Pope Francis");
 		votes.add("Edward Snowden");
 
+		
 		assertEquals("pope francis", new VoteProcessor().calculateElectionWinner(votes));
-	}
+	}	
+		
+	
 
 	/** If neither candidate has more votes than the other, report a tie by returning the String "TIE". **/
 	@Test
@@ -68,6 +71,3 @@ public class Level3CodingExam {
 		assertEquals(2, new HashMapCalculator().commonKeyValuePairs(hashmap1, hashmap2));
 	}
 }
-
-
-
